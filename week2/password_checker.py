@@ -1,75 +1,101 @@
+#!/usr/bin/env python3
+# password_checker.py
+# Evaluates password strength based on security requirements
 
 def check_password_strength(password):
     """
-    Evaluates password strength based on multiple criteria.
+    Evaluates password strength.
+    Returns a tuple: (strength_level, list_of_requirements)
 
-    Args:
-        password (str): The password to evaluate
-
-    Returns:
-        str: Strength rating with feedback
+    Strength levels: "WEAK", "MEDIUM", "STRONG"
     """
-    score = 0
-    feedback = []
+    requirements_met = 0
+    requirements = []
 
-    # Check length
+    # Requirement 1: Length (at least 8 characters)
     if len(password) >= 8:
-        score += 1
+        requirements_met += 1
+        requirements.append("✓ At least 8 characters")
     else:
-        feedback.append("Too short (minimum 8 characters)")
+        requirements.append("✗ At least 8 characters")
 
-    # Check for uppercase letters
-    if any(c.isupper() for c in password):
-        score += 1
-    else:
-        feedback.append("Add uppercase letters")
-
-    # Check for lowercase letters
+    # Requirement 2: Lowercase letter
     if any(c.islower() for c in password):
-        score += 1
+        requirements_met += 1
+        requirements.append("✓ Contains lowercase letters")
     else:
-        feedback.append("Add lowercase letters")
+        requirements.append("✗ Contains lowercase letters")
 
-    # Check for digits
+    # Requirement 3: Uppercase letter
+    if any(c.isupper() for c in password):
+        requirements_met += 1
+        requirements.append("✓ Contains uppercase letters")
+    else:
+        requirements.append("✗ Contains uppercase letters")
+
+    # Requirement 4: Number
     if any(c.isdigit() for c in password):
-        score += 1
+        requirements_met += 1
+        requirements.append("✓ Contains numbers")
     else:
-        feedback.append("Add numbers")
+        requirements.append("✗ Contains numbers")
 
-    # Check for special characters
+    # Requirement 5: Special character
     special_chars = "!@#$%^&*()_+-=[]{}|;:,.<>?"
     if any(c in special_chars for c in password):
-        score += 1
+        requirements_met += 1
+        requirements.append("✓ Contains special characters")
     else:
-        feedback.append("Add special characters")
+        requirements.append("✗ Contains special characters")
 
-    # Determine strength rating
-    if score <= 2:
-        rating = "WEAK ❌"
-    elif score <= 4:
-        rating = "MEDIUM ⚠️"
+    # Determine strength level
+    if requirements_met == 5:
+        strength = "STRONG"
+    elif requirements_met >= 3:
+        strength = "MEDIUM"
     else:
-        rating = "STRONG ✅"
+        strength = "WEAK"
 
-    # Build result message
-    if feedback:
-        return f"{rating} - Issues: {', '.join(feedback)}"
-    else:
-        return f"{rating} - Excellent password!"
+    return strength, requirements
 
+
+# Main program
+print("=== Password Strength Checker ===\n")
 
 # Test cases
 test_passwords = [
-    "weak",             # Weak
-    "Password1",        # Medium (missing special char)
-    "Pass123!",         # Strong
-    "VeryStr0ng!Pass",  # Strong
-    "12345678",         # Weak (only numbers)
+    "password",           # Weak - no uppercase, numbers, special chars
+    "Password1",          # Medium - missing special chars
+    "P@ssw0rd!",          # Strong - meets all requirements
+    "abc123",             # Weak - too short, no uppercase, no special
+    "MySecureP@ss123"     # Strong - meets all requirements
 ]
 
-print("Password Strength Checker")
-print("=" * 60)
+print("Testing sample passwords:\n")
 for pwd in test_passwords:
-    result = check_password_strength(pwd)
-    print(f"'{pwd}' → {result}")
+    strength, requirements = check_password_strength(pwd)
+    print(f"Password: '{pwd}'")
+    print(f"Strength: {strength}")
+    print("Requirements:")
+    for req in requirements:
+        print(f"  {req}")
     print()
+
+# Interactive mode
+print("="*50)
+user_password = input("\nEnter a password to check: ")
+strength, requirements = check_password_strength(user_password)
+
+print(f"\n{'='*50}")
+print(f"Password Strength: {strength}")
+print(f"{'='*50}")
+print("\nRequirements:")
+for req in requirements:
+    print(f"  {req}")
+
+if strength == "STRONG":
+    print("\n✅ This is a STRONG password!")
+elif strength == "MEDIUM":
+    print("\n⚠️  This password is MEDIUM strength. Consider improving it.")
+else:
+    print("\n❌ This is a WEAK password. Please strengthen it.")
