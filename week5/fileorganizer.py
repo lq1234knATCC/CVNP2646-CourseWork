@@ -29,12 +29,15 @@ def categorizeFile(filename):
         return "images"
     elif extension in ["zip", "tar", "gz", "rar", "7z"]:
         return "archives"
+    elif extension in ["exe", "msi", "bat", "sh"]:
+        return "executables"
     elif extension in ["mp4", "avi", "mkv", "mov"]:
         return "videos"
     elif extension in ["mp3", "wav", "flac", "aac"]:
         return "audio"
     else:
-        return "other"
+        return "other" #if nothing else matches, return other
+    pass
 
 
 def moveFile(sourceDir):
@@ -44,6 +47,7 @@ def moveFile(sourceDir):
         "documents": 0,
         "images": 0,
         "archives": 0,
+        "executables": 0,
         "videos": 0,
         "audio": 0,
         "other": 0
@@ -138,8 +142,8 @@ def main():
 
     print(f"[*]Total files moved: {total_files}")
     print(f"[*]Files moved per category:")
-    for cat, count in category_counts.items():
-        print(f"    {cat}: {count}")
+    for cat, count in category_counts.items(): # for each category and count in the category counts, print the category and count
+        print(f"    {cat}: {count}") #lists categories and counts in console
     
 
     # Generate JSON report
