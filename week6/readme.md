@@ -1,0 +1,8 @@
+Title - Auth_scanner, scans through an authorization log file and displays the most needed info in a much more human readable fashion, outputs both .txt file and .json files for you to refrence later.
+Usage - Simply run auth_scanner.py in command prompt while in the directory with the log you want scanned
+Features - Generates a Json report and a Txt report. also reports the top 5 users and ips based on failed attempts.
+Implimentation - I used .split() to seperate the log into parts, cutting out spaces and tabs (whitespaces), and key=value pairs for the user, ip, event and status. I used counter to make it much easier to get the top five most common ips, it has a built in method most_common() that you can use to get the results in one command, rather then a loop that counts up to 5
+error handling - I use   if '=' in kv:  to handle malformed logs, I use this while looping through the key=value pairs, this will skip lines that dont include an equals sign. it also skips empty lines.
+AI usage. I used ChatGPT to help me understand code that I found online from places like stackoverflow and github, as well as to help me understand and verify VScodes automatic suggestions. I also utilised code from the web app.
+Testing - I tested my scanner with the auth_test.log file you provided.
+Challenges - I tried to avoid using counter for getting the most common for probably an hour of trying before I just gave up and re-did it with counter instead.

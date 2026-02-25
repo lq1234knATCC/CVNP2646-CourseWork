@@ -1,0 +1,14 @@
+Timestamp: 2026-02-24T19:13:41.501393
+Total Events: 36
+Total Successful Attempts: 9
+Total Failed Attempts: 24
+Top 5 Failed Users:
+  admin: 15
+  root: 4
+  administrator: 3
+  test: 2
+Top 5 Failed IPs:
+  198.51.100.45: 15
+  203.0.113.89: 4
+  192.0.2.15: 4
+  198.51.100.92: 1
