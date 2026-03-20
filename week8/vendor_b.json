@@ -1,0 +1,14 @@
+{
+  "feed_name": "VendorB Indicators",
+  "generated": "2024-11-20T10:05:00Z",
+  "data": [
+    {
+      "ioc_id": "VB-001",
+      "indicator_type": "ip",
+      "indicator_value": "203.0.113.10",
+      "score": 92,
+      "severity": "high",
+      "discovered": "2024-11-14"
+    }
+  ]
+}

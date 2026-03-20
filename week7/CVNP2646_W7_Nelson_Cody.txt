@@ -1,0 +1,5 @@
+CVNP2646_W7_Nelson_Cody
+Cody Nelson
+https://github.com/lq1234knATCC/CVNP2646-CourseWork/tree/main/week7
+https://mediaspace.minnstate.edu/media/CVNP+2646+Week7+Cody+Nelson/1_tqan78jh
+the importance of config driven programming makes sense to me, its easier to have multiple configs, and to verify they are working correctly. like how we have our backup and invalid config, we could have a backup file for each department in a company or something similar.

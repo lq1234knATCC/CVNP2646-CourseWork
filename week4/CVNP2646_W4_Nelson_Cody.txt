@@ -1,0 +1,5 @@
+CVNP2646_W4_Nelson_Cody
+Name -- Cody Nelson 
+Github -- https://github.com/lq1234knATCC/CVNP2646-CourseWork/tree/main/week4
+Video -- https://mediaspace.minnstate.edu/media/CVNP+2646+Week4+Cody+Nelson/1_4ca8iru7
+Reflection --  I used ai as a learning tool, putting in sections of a script and asking what a piece of it does, I think when used this way, it is similar to having like a 1 on 1 tutor available to you  when using it in a more generative way I try to do the same, go line by line so its easier to see what individual pat does, making it easier to see if it makes sense.

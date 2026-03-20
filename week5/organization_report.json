@@ -1,14 +1,15 @@
 {
-    "timestamp": "2026-02-18T18:39:05.337123",
+    "timestamp": "2026-02-18T19:01:36.063525",
     "source_directory": "C:\\Users\\lq1234kn\\Documents\\python json\\CVNP2646-CourseWork\\week5\\test_downloads",
-    "total_files": 0,
+    "total_files": 13,
     "categories": {
-        "documents": 0,
-        "images": 0,
-        "archives": 0,
-        "videos": 0,
-        "audio": 0,
-        "other": 0
+        "documents": 3,
+        "images": 2,
+        "archives": 2,
+        "executables": 2,
+        "videos": 1,
+        "audio": 1,
+        "other": 2
     },
-    "organized": 0
+    "organized": 13
 }

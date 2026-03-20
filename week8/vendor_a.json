@@ -1,0 +1,15 @@
+{
+  "source": "VendorA ThreatFeed",
+  "timestamp": "2024-11-20T10:00:00Z",
+  "indicators": [
+    {
+      "id": "VA-001",
+      "type": "ip",
+      "value": "203.0.113.10",
+      "confidence": 95,
+      "threat": "critical",
+      "first_seen": "2024-11-15",
+      "tags": ["apt28", "c2"]
+    }
+  ]
+}

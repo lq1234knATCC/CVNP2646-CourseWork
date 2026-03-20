@@ -1,0 +1,14 @@
+{
+  "feed_version": "1.0",
+  "timestamp": "2024-11-20T15:30:00Z",
+  "indicators": [
+    {
+      "indicator": "203.0.113.10",
+      "type": "ipv4",
+      "confidence": 95,
+      "severity": "critical",
+      "sources": ["VendorA", "VendorB"],
+      "first_seen": "2024-11-15T00:00:00Z"
+    }
+  ]
+}

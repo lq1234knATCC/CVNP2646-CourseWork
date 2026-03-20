@@ -1,0 +1,13 @@
+{
+  "generated_at": "2024-11-20T15:30:00Z",
+  "total_entries": 3,
+  "blocklist": [
+    {
+      "address": "203.0.113.10",
+      "action": "block",
+      "priority": "high",
+      "reason": "Threat level: critical, Confidence: 95%",
+      "sources": ["VendorA", "VendorB"]
+    }
+  ]
+}

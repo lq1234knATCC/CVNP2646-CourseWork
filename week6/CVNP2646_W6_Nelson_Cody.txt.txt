@@ -1,0 +1,4 @@
+CVNP2646_W6_Nelson_Cody.txt
+Github - https://github.com/lq1234knATCC/CVNP2646-CourseWork/tree/main/week6
+Video - https://mediaspace.minnstate.edu/media/CVNP+2646+Week6+Cody+Nelson/1_v7q1bsn2
+Reflection - I can see the value that counter adds, im sure everything it does could be done without it, but it is much more efficent to just use it. Key value pairs seem incredibly helpful for storing all sorts of data and apperently you can include a dictionary as the value. I imagine key=value pairs are utilised almost everywhere.

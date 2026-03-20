@@ -3,7 +3,7 @@
 2024-11-25 08:18:45 event=LOGIN status=SUCCESS user=alice ip=192.168.1.100 method=WEB
 2024-11-25 08:22:10 event=LOGIN status=SUCCESS user=bob ip=172.16.0.50 method=SSH
 2024-11-25 08:25:33 event=LOGIN status=SUCCESS user=charlie ip=10.0.2.75 method=WEB
-2024-11-25 08:30:12 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+            2024-11-25 08:30:12 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH      
 2024-11-25 08:30:15 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
 2024-11-25 08:30:18 event=LOGIN status=FAIL user=root ip=198.51.100.45 method=SSH
 2024-11-25 08:30:21 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH

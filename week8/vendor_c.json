@@ -1,0 +1,14 @@
+{
+  "provider": "VendorC",
+  "created_at": "2024-11-20T10:10:00Z",
+  "threats": [
+    {
+      "threat_id": "VC-001",
+      "category": "domain",
+      "ioc": "malicious.example",
+      "reliability": 88,
+      "risk": "high",
+      "seen_at": "2024-11-16"
+    }
+  ]
+}
