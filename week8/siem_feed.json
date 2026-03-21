@@ -1,7 +1,18 @@
 {
-  "generated_at": "2026-03-20T22:14:25.519527",
-  "total_indicators": 1,
+  "generated_at": "2026-03-20T22:30:55.364273",
+  "total_indicators": 2,
   "indicators": [
+    {
+      "ioc_value": "203.0.113.10",
+      "ioc_type": "ip",
+      "threat_level": "critical",
+      "confidence_score": 95,
+      "first_seen": "",
+      "sources": [
+        "VendorB",
+        "VendorA"
+      ]
+    },
     {
       "ioc_value": "malicious.example",
       "ioc_type": "domain",

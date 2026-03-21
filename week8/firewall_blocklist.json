@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-03-20T22:14:25.519503",
-  "total_entries": 1,
+  "generated_at": "2026-03-20T22:30:55.364250",
+  "total_entries": 2,
   "blocklist": [
+    {
+      "address": "203.0.113.10",
+      "action": "block",
+      "priority": "high",
+      "reason": "Threat level: critical, Confidence: 95%",
+      "sources": [
+        "VendorB",
+        "VendorA"
+      ]
+    },
     {
       "address": "malicious.example",
       "action": "block",

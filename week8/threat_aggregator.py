@@ -194,24 +194,31 @@ def generate_statistics(loaded, valid, deduped, filtered):
 all_indicators = []
 
 # Load and normalize feeds
-for filename, source in [("vendor_a.json", "VendorA"), 
-                         ("vendor_b.json", "VendorB"), 
-                         ("vendor_c.json", "VendorC")]:
+for filename, source in [
+    ("vendor_a.json", "VendorA"), 
+    ("vendor_b.json", "VendorB"), 
+    ("vendor_c.json", "VendorC")
+]:
     feed = load_feed(filename)
 
-indicators_list = (
-    feed.get("indicators")
-    or feed.get("data")
-    or feed.get("threats")
-)
+    # Handle different feed structures
+    indicators_list = (
+        feed.get("indicators")
+        or feed.get("data")
+        or feed.get("threats")
+    )
 
-if indicators_list is None:
-    raise ValueError(f"Unsupported feed format in {filename}")
+    if indicators_list is None:
+        print(f"Skipping {filename} - unsupported format")
+        continue
 
-for ind in indicators_list:
-    all_indicators.append(normalize_indicator(ind, source))
+    print(f"{source}: {len(indicators_list)} indicators loaded")
 
-print(f"Total indicators loaded: {len(all_indicators)}")
+    for ind in indicators_list:
+        all_indicators.append(normalize_indicator(ind, source))
+
+# Now this runs AFTER all files are processed
+print(f"\nTotal indicators loaded: {len(all_indicators)}")
 
 # Validate
 valid_indicators, validation_errors = validate_indicators(all_indicators)

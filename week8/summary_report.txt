@@ -1,6 +1,7 @@
-Threat Intelligence Summary Report - 2026-03-20T22:14:25.519529
-Total indicators after deduplication: 1
-Duplicates removed: 0
+Threat Intelligence Summary Report - 2026-03-20T22:30:55.364275
+Total indicators after deduplication: 2
+Duplicates removed: 1
 
 Top 5 indicators by confidence:
+- IP 203.0.113.10 | Threat: critical | Confidence: 95% | Sources: VendorB, VendorA
 - DOMAIN malicious.example | Threat: high | Confidence: 88% | Sources: VendorC
