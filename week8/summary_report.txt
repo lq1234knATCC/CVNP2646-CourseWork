@@ -1,10 +1,6 @@
-Threat Intelligence Summary Report - 2026-03-13T20:37:24.829283
-Total indicators after deduplication: 15
-Duplicates removed: 2
+Threat Intelligence Summary Report - 2026-03-20T22:14:25.519529
+Total indicators after deduplication: 1
+Duplicates removed: 0
 
 Top 5 indicators by confidence:
-- IP 203.0.113.10 | Threat: critical | Confidence: 95% | Sources: VendorA, VendorB
-- IP 192.0.2.99 | Threat: critical | Confidence: 93% | Sources: VendorC
-- DOMAIN secure-login-check.com | Threat: high | Confidence: 91% | Sources: VendorC, VendorA
-- IP 192.0.2.77 | Threat: high | Confidence: 91% | Sources: VendorB
-- URL http://steal-login.net/auth | Threat: high | Confidence: 90% | Sources: VendorB
+- DOMAIN malicious.example | Threat: high | Confidence: 88% | Sources: VendorC

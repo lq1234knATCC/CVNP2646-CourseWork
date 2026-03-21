@@ -1,14 +1,16 @@
 {
-  "feed_version": "1.0",
-  "timestamp": "2024-11-20T15:30:00Z",
+  "generated_at": "2026-03-20T22:14:25.519527",
+  "total_indicators": 1,
   "indicators": [
     {
-      "indicator": "203.0.113.10",
-      "type": "ipv4",
-      "confidence": 95,
-      "severity": "critical",
-      "sources": ["VendorA", "VendorB"],
-      "first_seen": "2024-11-15T00:00:00Z"
+      "ioc_value": "malicious.example",
+      "ioc_type": "domain",
+      "threat_level": "high",
+      "confidence_score": 88,
+      "first_seen": "",
+      "sources": [
+        "VendorC"
+      ]
     }
   ]
 }

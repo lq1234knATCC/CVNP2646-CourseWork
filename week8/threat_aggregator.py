@@ -198,8 +198,18 @@ for filename, source in [("vendor_a.json", "VendorA"),
                          ("vendor_b.json", "VendorB"), 
                          ("vendor_c.json", "VendorC")]:
     feed = load_feed(filename)
-    for ind in feed["indicators"]:
-        all_indicators.append(normalize_indicator(ind, source))
+
+indicators_list = (
+    feed.get("indicators")
+    or feed.get("data")
+    or feed.get("threats")
+)
+
+if indicators_list is None:
+    raise ValueError(f"Unsupported feed format in {filename}")
+
+for ind in indicators_list:
+    all_indicators.append(normalize_indicator(ind, source))
 
 print(f"Total indicators loaded: {len(all_indicators)}")
 
