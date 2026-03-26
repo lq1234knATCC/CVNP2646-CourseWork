@@ -2,10 +2,6 @@ import json
 from collections import Counter
 from datetime import datetime
 
-# -------------------
-# Helper Functions
-# -------------------
-
 def load_feed(filename): #loads a json file and returns the data as a dictionary
     with open(filename, "r") as f:
         return json.load(f)

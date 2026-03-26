@@ -1,0 +1,5 @@
+CVNP2646_W8_Nelson_Cody
+Cody Nelson
+https://mediaspace.minnstate.edu/media/pythonJsonWeek8/1_xc0m6iye
+https://github.com/lq1234knATCC/CVNP2646-CourseWork/tree/main/week8
+this week I feel was the toughest project so far, the deduplication and the filtering was definatly the hardest part, however I feel this is a very good analogue to what you could end up making in industry, so I feel it is a good learning tool because of that
