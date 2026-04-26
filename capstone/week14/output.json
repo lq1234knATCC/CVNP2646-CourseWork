@@ -1,0 +1,28 @@
+{
+  "email_id": "12345",
+  "findings": [
+    {
+      "type": "spoofed_domain",
+      "value": "paypaI.com",
+      "details": "Lookalike of paypal.com"
+    },
+    {
+      "type": "malicious_domain_match",
+      "value": "evilhost.ru"
+    },
+    {
+      "type": "url_mismatch",
+      "display_text": "www.paypal.com",
+      "actual_url": "http://evilhost.ru/login"
+    },
+    {
+      "type": "suspicious_attachment",
+      "filename": "invoice.pdf.exe"
+    },
+    {
+      "type": "keyword_match",
+      "category": "urgency",
+      "matches": ["urgent", "immediately"]
+    }
+  ]
+}

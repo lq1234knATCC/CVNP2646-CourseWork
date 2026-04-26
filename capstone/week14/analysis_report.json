@@ -1,0 +1,59 @@
+{
+  "total_emails": 2,
+  "results": [
+    {
+      "email_id": "12345",
+      "score": 12,
+      "verdict": "high risk",
+      "findings": [
+        "Keyword detected: verify",
+        "Keyword detected: password",
+        "Keyword detected: suspended",
+        "Keyword detected: immediately",
+        "Suspicious URL: http://evilhost.ru/login\">www.paypal.com</a></p></body></html>",
+        "Possible domain spoofing in FROM address",
+        "Reply-To mismatch detected",
+        "Suspicious attachment: invoice.pdf.exe"
+      ],
+      "iocs": {
+        "urls": [
+          "http://evilhost.ru/login\">www.paypal.com</a></p></body></html>"
+        ],
+        "domains": [
+          "evilhost.ru"
+        ],
+        "ips": [
+          "185.234.219.12"
+        ],
+        "hashes": [
+          "3f786850e387550fdab836ed7e6dc881de23001b"
+        ]
+      }
+    },
+    {
+      "email_id": "67890",
+      "score": 5,
+      "verdict": "medium risk",
+      "findings": [
+        "Keyword detected: verify",
+        "Keyword detected: password",
+        "Suspicious URL: https://microsoft-security.com/login\">office",
+        "Reply-To mismatch detected"
+      ],
+      "iocs": {
+        "urls": [
+          "https://microsoft-security.com/login\">office"
+        ],
+        "domains": [
+          "microsoft-security.com"
+        ],
+        "ips": [
+          "203.0.113.55"
+        ],
+        "hashes": [
+          "9b74c9897bac770ffc029102a200c5de"
+        ]
+      }
+    }
+  ]
+}

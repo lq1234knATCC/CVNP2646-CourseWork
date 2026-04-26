@@ -1,0 +1,9 @@
+{
+  "trusted_domains": [
+    "paypal.com",
+    "company.com"
+  ],
+  "trusted_senders": [
+    "security@paypal.com"
+  ]
+}

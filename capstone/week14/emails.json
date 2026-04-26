@@ -1,0 +1,52 @@
+{
+  "emails": [
+    {
+      "email_id": "12345",
+      "headers": {
+        "from": "PayPal Security <security@paypaI.com>",
+        "reply_to": "support@secure-paypal-login.com",
+        "return_path": "bounce@mailer.evilhost.ru",
+        "subject": "URGENT: Ձեր account has been suspended!",
+        "date": "2026-04-18T14:22:10Z",
+        "received": [
+          "from unknown (HELO mail.evilhost.ru) (185.234.219.12)",
+          "by mx.company.com with SMTP"
+        ]
+      },
+      "body": {
+        "text": "Dear user, your account has been suspended. Click the link below to verify your password immediately.",
+        "html": "<html><body><p>Click <a href=\"http://evilhost.ru/login\">www.paypal.com</a></p></body></html>"
+      },
+      "attachments": [
+        {
+          "filename": "invoice.pdf.exe",
+          "hash": "3f786850e387550fdab836ed7e6dc881de23001b"
+        }
+      ]
+    },
+    {
+      "email_id": "67890",
+      "headers": {
+        "from": "Microsoft Support <no-reply@microsoft-security.com>",
+        "reply_to": "help@microsoft.com",
+        "return_path": "bounce@mailer.safehost.net",
+        "subject": "Your Office 365 password expires today",
+        "date": "2026-04-24T09:10:00Z",
+        "received": [
+          "from unknown (HELO mail.safehost.net) (203.0.113.55)",
+          "by mx.company.com with SMTP"
+        ]
+      },
+      "body": {
+        "text": "Your password expires today. Please verify your account to avoid interruption.",
+        "html": "<html><body><p>Login here: <a href=\"https://microsoft-security.com/login\">Office Portal</a></p></body></html>"
+      },
+      "attachments": [
+        {
+          "filename": "security_update.pdf",
+          "hash": "9b74c9897bac770ffc029102a200c5de"
+        }
+      ]
+    }
+  ]
+}
