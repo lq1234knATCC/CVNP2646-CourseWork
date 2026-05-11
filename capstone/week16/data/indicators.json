@@ -1,0 +1,15 @@
+{
+  "malicious_domains": [
+    "evilhost.ru",
+    "secure-paypal-login.com"
+  ],
+  "malicious_ips": [
+    "185.234.219.12"
+  ],
+  "keywords": {
+    "urgency": ["urgent", "immediately", "action required"],
+    "credential": ["verify your password", "login", "confirm account"],
+    "fear": ["account suspended", "unauthorized access"]
+  },
+  "file_extensions": [".exe", ".js", ".bat"]
+}

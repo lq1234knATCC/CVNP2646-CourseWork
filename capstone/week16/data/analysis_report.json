@@ -1,0 +1,88 @@
+{
+  "total_emails": 3,
+  "results": [
+    {
+      "email_id": "12345",
+      "score": 13,
+      "verdict": "high risk",
+      "risk_level_numeric": 13,
+      "indicator_count": 8,
+      "findings": [
+        "Keyword detected: verify",
+        "Keyword detected: password",
+        "Keyword detected: suspended",
+        "Keyword detected: immediately",
+        "Suspicious URL: http://evilhost.ru/login",
+        "Link text does not match actual URL",
+        "Reply-To domain mismatch",
+        "Suspicious attachment: invoice.pdf.exe"
+      ],
+      "iocs": {
+        "urls": [
+          "http://evilhost.ru/login"
+        ],
+        "domains": [
+          "evilhost.ru"
+        ],
+        "ips": [
+          "185.234.219.12"
+        ],
+        "hashes": [
+          "3f786850e387550fdab836ed7e6dc881de23001b"
+        ]
+      }
+    },
+    {
+      "email_id": "67890",
+      "score": 8,
+      "verdict": "high risk",
+      "risk_level_numeric": 8,
+      "indicator_count": 5,
+      "findings": [
+        "Keyword detected: verify",
+        "Keyword detected: password",
+        "Suspicious URL: https://microsoft-security.com/login",
+        "Link text does not match actual URL",
+        "Reply-To domain mismatch"
+      ],
+      "iocs": {
+        "urls": [
+          "https://microsoft-security.com/login"
+        ],
+        "domains": [
+          "microsoft-security.com"
+        ],
+        "ips": [
+          "203.0.113.55"
+        ],
+        "hashes": [
+          "9b74c9897bac770ffc029102a200c5de"
+        ]
+      }
+    },
+    {
+      "email_id": "67678",
+      "score": 2,
+      "verdict": "low risk",
+      "risk_level_numeric": 2,
+      "indicator_count": 1,
+      "findings": [
+        "Suspicious URL: https://account.microsoft.com</a"
+      ],
+      "iocs": {
+        "urls": [
+          "https://account.microsoft.com</a",
+          "https://account.microsoft.com"
+        ],
+        "domains": [
+          "account.microsoft.com<",
+          "account.microsoft.com"
+        ],
+        "ips": [
+          "40.92.0.1"
+        ],
+        "hashes": []
+      }
+    }
+  ]
+}

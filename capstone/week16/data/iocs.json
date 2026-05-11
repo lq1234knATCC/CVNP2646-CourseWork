@@ -1,0 +1,16 @@
+{
+  "domains": [
+    "paypaI.com",
+    "evilhost.ru",
+    "secure-paypal-login.com"
+  ],
+  "ips": [
+    "185.234.219.12"
+  ],
+  "urls": [
+    "http://evilhost.ru/login"
+  ],
+  "hashes": [
+    "3f786850e387550fdab836ed7e6dc881de23001b"
+  ]
+}
